@@ -1,35 +1,91 @@
 <!doctype html>
-<html>
-	<head>
-	<meta charset="UTF-8" />
-	<title>Ejercicio 1</title>
-	</head>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Ejercicio 1</title>
+<!--
+    CSS: Hojas de estilo en cascada.
+    El Css se puede insertar en 3 formas:
+    1. En linea (inline) --No recomendado.
+    2. En el documento HTML en un bloque <style>. -- No recomendado pero aceptable
+    3. En un documento independiente -- RECOMENDADO
 
-	<body>
-		<div>
-			<header>
-				<h1>Ejercicio 1</h1>
-				<img src="images/header.jpg" alt="">
-			</header>
-			<nav>
-				<ul>
-					<li>
-						<a href="">Inicio</a>
-					</li>
-					<li>
-						<a href="">Servicios</a>
-					</li><li>
-						<a href="">Producto</a>
-					</li>
-					<li>
-						<a href="">Galeria</a>
-					</li><li>
-						<a href="">Contactos</a>
-					</li>
-				</ul>
-			</nav>
-			<main></main>
-			<footer></footer>
-		</div>
-	</body>
+    <style>
+        p:last-child {
+            color: #00F;
+        }
+    </style>
+    -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Ejercicio 1</h1>
+        <img src="images/header.jpg" alt=""> 
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="#init">Inicio</a> </li>
+            <li> <a href="#services">Servicios</a> </li>
+            <li> <a href="#product">Producto</a> </li>
+            <li> <a href="#gallery">Galeria</a> </li>
+            <li> <a href="#contact">Contactos</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="init">
+            <h2>Inicio</h2>
+            <a href="#">Elemento en linea 1</a>
+            <a href="#">Elemento en linea 2</a>
+            <p>Lorem ipsum dolor.</p>
+            <a href="#">Elemento en linea 3</a>
+            <img src="images/inicio.jpg" alt="" />
+            <p class="azul">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem praesentium veritatis natus quae illo, minima optio quisquam delectus, eos neque. Odit enim, delectus laboriosam fuga itaque sed dolorem nesciunt!</p>
+            <p id="verde" class="azul">Quae ipsum sunt error cupiditate asperiores, omnis adipisci sit, veniam fugiat ducimus dolores, est deleniti optio ex expedita molestias explicabo. Sint magnam doloremque laudantium sit neque, ut mollitia vel rerum.</p>
+        </section>
+        <section id="services" class="section section-services">
+            <h2>Servicios</h2>
+            <img src="images/servicios.jpg" alt="">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nihil, quam distinctio! Exercitationem maxime quae aliquid, doloremque explicabo quis blanditiis beatae excepturi dolor? Dolore soluta ad tenetur ut, voluptas vitae!</p>
+            <p>Enim veniam voluptatum possimus culpa sint, repudiandae obcaecati doloribus optio repellendus quibusdam rem veritatis atque error, vel beatae. Nihil sapiente amet facere dolorem, aut qui odit at quos, fugit neque!</p>
+        </section>
+        <section id="products">
+            <h2>Productos</h2>
+            <img src="images/productos.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga totam minus quod odio dignissimos, expedita sed corporis eum doloribus explicabo quaerat dicta magni nemo maxime perspiciatis architecto sit vel quam.</p>
+            <p>Libero aperiam dignissimos, quam tempora iste. Quidem itaque hic fugit tenetur deleniti. Eos ut dolorem, amet ab officia repudiandae, cum sed ipsa iste, nesciunt possimus repellat doloribus labore similique reprehenderit!</p>
+        </section>
+        <section id="gallery">
+            <h2>Galeria</h2>
+            <img src="images/galeria.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem velit nesciunt error sapiente voluptatibus nostrum vel id veritatis, laudantium tempore quas sit saepe perferendis a temporibus blanditiis. Delectus, vero, quibusdam?</p>
+            <p>Ut repudiandae, nostrum facere eum similique, consectetur fugiat possimus minima quis optio mollitia porro excepturi officiis quidem, eligendi earum iusto, magnam delectus nisi libero blanditiis commodi quae ad? Corrupti, quasi?</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <img src="images/contacto.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias provident voluptatum commodi fugit, esse obcaecati ea, dolor beatae impedit optio doloremque est molestiae repellat reprehenderit deleniti debitis ut doloribus. Dolores?</p>
+            <p>Corporis sapiente accusamus consequuntur non nesciunt saepe. Odio ea sapiente illum eum porro libero non iste quo natus, vel necessitatibus delectus culpa quam voluptatum, officia aliquam in. Cum, molestias, provident.</p>
+        </section>
+    </main>
+    <footer>
+        <p> Todos los derechos reservados | eduMac 2018 | Solanyi </p>
+    </footer>
+</div>
+<!--
+    Reglas y convenciones de valores id:
+        -no espacios
+        - no caracteres especiales
+        - no guion bajo
+        
+        SIEMPRE EN INGLES
+        Formato CamelCase-lowerCase : sectionSeeeee
+                                
+            *Para "class" no se usa lowerCase, es solo en minusculas y palabras separadas con "-" : section-seee    
+-->
+</body>
 </html>

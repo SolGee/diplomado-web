@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*
+    Sintaxis de reglas CSS
+        selector: indica al navegador cual sera el elemento que se modificara
+        lista de propiedades: propiedades que se modifican
+
+selector{
+    color: #f00;
+}
+
+Selectores:
+    1. Etiqueta
+    2. Clase -> atributo html: class
+        "class" sirve principalmente para añadir estilos CSS a un determinado elemento
+    3. Identificador (no recomendable) -> atributo html: id
+        "id" sirve principalmente para añadir comportamientos JS a un determinado elemento
+*/
+
+
+/*Selector por etiqueta
+p {
+    color: #f00;    
+}
+
+
+/*Selector por clase
+
+.azul {
+    color: #00f;
+}
+
+/*Selector por id
+
+#verde{
+    color: #0f0;
+}
+
+*/
+
+body {
+    font-family: arial;
+    /*font-size: 16px;*/
+    color: #333;
+    margin: 0;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /* Elementos de bloque se centran con margin automatico a la izquierda y a la derecha
+        Elementos en linea se centran con la propiedad "text-align".
+    
+    la propiedad "display" invierte los comportamientos de los elementos de bloque y en linea
+            display: inline;
+            display: block;
+    */
+}
+
+
+h1 {
+    font-size: 30px;
+    color: darkmagenta;
+    font-weight: 400;
+    /*
+    200 -> thin
+    300 -> light
+    400 -> normal
+    600 -> semibold
+    700 -> bold
+    800 -> black
+    900 -> extra black
+    */
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* le quita el subrayado prederteminado a la etiqueta "a"*/
+    color: coral;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: crimson;
+    
+}
+
+/*
+    Modelo de cajas
+        Propiedades:
+            background
+            -color: valor hexadecimal
+            -image: url de la imagen
+            -repeat:repeat/ no repeat
+            -attachment: scroll/ fixed
+            -position: 
+                Posicion X: left center right px
+                Posicion Y: top center bottom px
+            border
+            - ancho en px
+            - estilo: solid/ double...
+            - color en hex.
+            padding & margin
+                4 valores
+                    4 - 1 valor por lado: T R B L
+                    3 - 1er T, 2do R L, 3er B
+                    2 - 1er T B, 2do L R
+                    1 - TRLB top right bottom left
+                Propiedades
+                padding-top:
+                padding-right:
+                padding-bottom:
+                padding-left:
+                (Mismos para margin)
+            width & height
+                valor en px % em
+*/
+
+.section-services {
+    /*background: #034DB0 url(../images/header.jpg) no-repeat center center fixed;
+    /*background-color: #034DB0;
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    border: 1px solid #f0f;
+    padding: 10px 20px 30px 40px;
+    margin: 10px;*/
+
+}
+
+main h2 {
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0D6C69;
+}
+
+main img {
+    max-width: 300px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px #999;
+}
+
+footer {
+    background-color: #666;
+    text-align: center;
+    color: #ccc;
+    padding: 16px 0;
+}
+
+footer p {
+    margin: 0;
+}
