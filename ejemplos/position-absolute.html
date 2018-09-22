@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento Absoluto</title>
+    <!--
+        Posicionamiento Absoluto (position: absolute;):
+            - El elemento sale del flujo normal del renderizado del HTML.
+            - Es posible establecer coordenadas utizando las propiedades:
+                - left
+                - right
+                - top
+                - bottom
+            - Las coordenadas serán tomando como base a aquel elemento padre
+              que tenga un valor en la propiedad "position" diferente a "static"
+              (valor por defecto).
+    -->
+    <style>
+        .abuelo {
+            width: 700px;
+            height: 700px;
+            background-color: #000;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -350px;
+            margin-top: -350px;
+        }
+        .padre {
+            width: 500px;
+            height: 500px;
+            background-color: #666;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -250px;
+        }
+        .hijo {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .hijo-1 {
+            background-color: #f00;
+            left: 0;
+            top: 0;
+        }
+        .hijo-2 {
+            background-color: #f0f;
+            right: 0;
+            top: 0;
+        }
+        .hijo-3 {
+            background-color: #0ff;
+            left: 0;
+            bottom: 0;
+        }
+        .hijo-4 {
+            background-color: #00f;
+            right: 0;
+            bottom: 0;
+        }
+        .hijo-5 {
+            background-color: #0f0;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="abuelo">
+        <div class="padre">
+            <div class="hijo hijo-1"></div>
+            <div class="hijo hijo-2"></div>
+            <div class="hijo hijo-3"></div>
+            <div class="hijo hijo-4"></div>
+            <div class="hijo hijo-5"></div>
+        </div>
+    </div>
+</body>
+</html>

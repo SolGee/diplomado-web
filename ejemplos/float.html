@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento Flotante</title>
+    <!--
+        Posicionamiento Flotante (float: [left | right]):
+            - El elemento SI sale del flujo normal del renderizado del HTML.
+            - No es posible establecer coordenadas.
+            - La propiedad "clear" va a forzar a un elemento a que reconozca el
+              espacio que deja un elemento flotado antes que él.
+
+            - La propiedad "clear" tiene 3 posibles valores:
+                - left: Va a reconocer elementos flotados a la izquierda.
+                - right: Va a reconocer elementos flotados a la derecha.
+                - both: Va a reconocer elementos flortados a la izquierda y a la derecha.
+    -->
+    <style>
+        .padre {
+            background-color: #666;
+        }
+        .padre:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .tio {
+            height: 200px;
+            background-color: burlywood;
+            clear: both;
+        }
+        .hijo {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .hijo-1 {
+            background-color: #f00;
+        }
+        
+        .hijo-2 {
+            background-color: #f0f;
+        }
+
+        .hijo-3 {
+            background-color: #0ff;
+        }
+
+        .hijo-4 {
+            background-color: #00f;
+        }
+
+        .hijo-5 {
+            background-color: #0f0;
+        }
+        .clear {
+            clear: both;
+        }
+        .parrafo:before {
+            content: "Inicio";
+        }
+        .parrafo:after {
+            content: "Final";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="padre">
+        <div class="hijo hijo-1"></div>
+        <div class="hijo hijo-2"></div>
+        <div class="hijo hijo-3"></div>
+        <div class="hijo hijo-4"></div>
+        <div class="hijo hijo-5"></div>
+    </div>
+    <!--<div class="tio">
+    </div>-->
+    <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem sunt asperiores quis tenetur tempore nisi animi sapiente id ea quod quaerat cupiditate placeat, aperiam voluptate voluptatum veniam, modi sequi voluptas.</p>
+</body>
+
+</html>

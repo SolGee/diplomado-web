@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento Fijo</title>
+     <!--
+        Posicionamiento Fijo (position: fixed):
+            - El elemento SI sale del flujo normal del renderizado del HTML.
+            - Es posible establecer coordenadas utizando las propiedades:
+                - left
+                - right
+                - top
+                - bottom
+            - Si no se especifican coordenas entonces el elemento queda ubicado con la posisión original.
+            - Las coordenadas serán tomando como base la ventana del navegador.
+    -->
+    <style>
+        .abuelo {
+            width: 700px;
+            height: 5000px;
+            background-color: #000;
+        }
+        .padre {
+            width: 500px;
+            height: 500px;
+            background-color: #666;
+        }
+        .hijo {
+            width: 100px;
+            height: 100px;
+        }
+        .hijo-1 {
+            background-color: #f00;
+        }
+        .hijo-2 {
+            background-color: #f0f;
+        }
+        .hijo-3 {
+            background-color: #0ff;
+        }
+        .hijo-4 {
+            background-color: #00f;
+            position: fixed;
+            top: 25px;
+            right: 25px;
+        }
+        .hijo-5 {
+            background-color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="abuelo">
+        <div class="padre">
+            <div class="hijo hijo-1"></div>
+            <div class="hijo hijo-2"></div>
+            <div class="hijo hijo-3"></div>
+            <div class="hijo hijo-4"></div>
+            <div class="hijo hijo-5"></div>
+        </div>
+    </div>
+</body>
+</html>
