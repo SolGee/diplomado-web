@@ -1,0 +1,41 @@
+## Creación de una llave SSH ##
+* Es indispensable tener instalado GIT (https://git-scm.com/)
+
+1. Ir a la sección de la "Configuración" de Github.
+2. Ir a la pestaña de "SSH and GPG keys".
+3. Si hay alguna "Key" entonces habrá que eliminarla.
+4. Ejecutar el siguiente comando en la consola (línea de comandos):
+
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+    *Es importante reemplazar el correo electrónico antes de ejecutar.
+
+5. Ejecutar el siguiente comando en la consola (línea de comandos):
+
+    eval "$(ssh-agent -s)"
+
+6. Ejecutar el siguiente comando en la consola (línea de comandos):
+
+    pbcopy < ~/.ssh/id_rsa.pub
+
+7. En la configuración de Github dar clic en el botón (verde) "New SSH Key"
+    - En el campo de "title" escribir "edumac".
+    - Hacer foco en el campo "key" y presionar "CMD + V" para pegar la llave.
+    - Hacer clic en el botón "Add SSH key" para guardar los datos.
+
+## Clonar repositorio ##
+
+1. Crear una carpeta con su nombre en "Documentos".
+2. Abrir esa carpeta en Visual Studio Code.
+3. Escribir en la consola:
+
+    git clone [path del repositorio]
+
+
+## Sincronizar repositorio ##
+1. En la opción de "Control de Código" (Source Control, barra de herramientas de VSC),
+    hacer clic en "Stage all change" (Signo de suma que se muestra a lado del título "CHANGES").
+
+2. Escribir un mensaje en el campo de texto "Message" y después hacer clic en "Commit" (Signo de paloma).
+
+3. Hacer clic en "Push" (Insertar).

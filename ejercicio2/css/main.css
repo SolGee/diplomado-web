@@ -102,8 +102,25 @@ h6:first-child {
 }
 
 
+/* Gallery */
 
 
+.gallery-list li {
+    display: inline-block;
+    margin: 10px;
+}
+ .gallery-list img {
+     border: 5px solid #fff;
+     box-shadow: 0 0 6px #999;
+
+ }
+
+ .gallery-list img:hover {
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px blueviolet;
+    transition: all .3s;
+
+}
 /*
 .page-main {
     margin-top: 50px;

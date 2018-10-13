@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Galaxies</title>
+    <link rel="stylesheet" href="css/lib/all.css">
+    <link rel="stylesheet" href="css/plugins/lightbox.min.css">
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -26,15 +28,38 @@
         <main class="page-main">
             <section class="page-section clearfix">
                 <div class="left">
-                    <img src="images/galax1.jpg" alt="">
+                    <img src="images/galax4.jpg" alt="">
                 </div>
                 <div class="right">
-                    <h2> Inicio </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi natus laboriosam asperiores, fugiat dolorem assumenda facilis saepe non sint aut laudantium maiores enim dicta accusantium soluta magni voluptate voluptatibus ea!</p>
-                        <p>Temporibus impedit, consequatur in adipisci necessitatibus numquam error consequuntur inventore quisquam eveniet deleniti modi sapiente commodi dicta, nobis labore odit iure pariatur fuga id, saepe doloribus cumque! Enim, laboriosam consectetur!</p>
-                    <h2> Quienes somos</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi natus laboriosam asperiores, fugiat dolorem assumenda facilis saepe non sint aut laudantium maiores enim dicta accusantium soluta magni voluptate voluptatibus ea!</p>
-                        <p>Temporibus impedit, consequatur in adipisci necessitatibus numquam error consequuntur inventore quisquam eveniet deleniti modi sapiente commodi dicta, nobis labore odit iure pariatur fuga id, saepe doloribus cumque! Enim, laboriosam consectetur!</p>
+                    <h2> Galería </h2>
+                <!-- LIGHTBOX -->
+                    <ul class="gallery-list">
+                        <li>
+                            <a href="images/galax1.jpg" data-lightbox="galax" data-title="Galaxia 1">
+                                <img src="images/thumbs/galax1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="images/galax2.jpg" data-lightbox="galax" data-title="Galaxia 2">
+                                <img src="images/thumbs/galax2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="images/galax3.jpg" data-lightbox="galax" data-title="Galaxia 3">
+                                <img src="images/thumbs/galax3.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="images/galax4.jpg" data-lightbox="galax4" data-title="Galaxia 4">
+                                <img src="images/thumbs/galax4.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="images/galax5.jpg" data-lightbox="galax5" data-title="Galaxia 5">
+                                <img src="images/thumbs/galax5.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 
                 <!--<div>
@@ -57,6 +82,8 @@
         </footer>
     </div>
     <div id="js">
+        <script src="js/lib/jquery-3.3.1.min.js"></script>
+        <script src="js/plugins/lightbox.min.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>
