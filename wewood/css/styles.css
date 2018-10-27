@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+/*
+    selector {
+        property: value;
+        property: value;
+        property: value;
+        property: value;
+        ...
+    }
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Limpia valores predeterminados del navegador*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+
+div#wrapper {
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color:black;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/reloj-madera-piel-negro-hombre-02.jpg)
+}
+
+section#servicios {
+    width: 100%;
+    height: 450px;
+  /* background-color: palevioletred;*/
+}
+
+section#nosotros {
+    width: 100%;
+    height: 740px;
+    /*background-color: darkkhaki;*/
+}
+
+section#catalogo {
+    width: 100%;
+    height: 820px;
+    background-color: pink;
+}
+
+section#contacto {
+    width: 100%;
+    height: 615px;
+    background-color: darkseagreen;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #461C31;
+}
+
+#wrapper nav h1 {
+    font-weight: 300;
+    font-size: 28px;
+    color: #A5B025;
+    margin-left: 35px;
+    padding-top: 15px;
+    float: left;
+    /* Permite que el espacio sobrante quede disponible y sea ocupado por otra caja en bloque*/
+}
+
+#menu {
+    float: right;
+    padding-right: 35px;
+    padding-top: 20px; 
+}
+
+#menu li {
+    float: left;
+    margin-left: 20px;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    color: #A5B025;
+}
+
+#servicios {
+    margin-top: 20px;
+}
+
+#servicios h2 {
+    width: 324px;
+    height: 105px;
+    background-color: #30a2a6;
+    color: white;
+    text-align: right;
+    font-size: 34px;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+div.boxServicios {
+    width: 237px;
+    height: 260px;
+    /*background-color: coral;*/
+    float: left;
+    margin-left: 15px;
+    margin-top: 40px;
+
+}
+
+div.boxServicios img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+div.boxServicios h3 {
+    font-size: 20px;
+    color: #4A4a4a;
+    text-align: center;
+    font-weight: 100;
+    padding: 0 15px 0;
+}
+
+.titulos {
+    width: 324px;
+    height: 61px;
+    background-color: #30a2a6;
+    color: white;
+    text-align: right;
+    font-size: 34px;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+#centrarNosotros {
+    width: 846px;
+    height: 550px;
+    /*background-color: cornflowerblue;*/
+    margin: 52px auto 0;
+}
+
+div.boxNosotros {
+    width: 50%;
+    height: 50%;
+    background-color:lightblue ;
+    float: left;
+    color: white;
+}
+
+#txtArtesanales {
+    background-color: #B14E80;
+}
+
+#imgArtesanales {
+    background-image: url(../img/imgartesanales.jpg);
+}
+
+#imgDiseno {
+    background-image: url(../img/IMGDISENO.jpg)
+}
+
+#txtDiseno {
+    background-color: #30A2A6;
+}
+
+.boxNosotros h4 {
+    font-size: 20px;
+    padding-top:60px;
+}
+
+.boxNosotros p {
+    font-size: 15px;
+ }
+
+.boxNosotros h4, p {
+     margin:0 40px 25px;
+}
+
+.centrarCatalogo {
+    margin-top: 20px;
+}
+
+.boxCatalogo {
+    width: 324px;
+    height: 587px;
+    background-color: #A5B025;
+    float: left;
+    margin-left: 10px;
+}
+
+
+
+
