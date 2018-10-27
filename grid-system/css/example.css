@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+/* Font Awesome */
+@import url('lib/all.css');
+
+/* Generals */
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+/* Header */
+
+/* Main */
+
+/* Footer */
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .caja-1,
+    .caja-2 {
+        max-width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .caja-1,
+    .caja-2,
+    .caja-3 {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+/* Helpers */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+}
+.clearfix:after {
+    clear: both;
+}
